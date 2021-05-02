@@ -26,6 +26,7 @@ textarea{
     resize:vertical;
     font-size: 130%;
     text-align: center;
+    overflow-x: hidden;
 }
 
 input[type=text]{
