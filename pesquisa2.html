@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Pesquisa</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body onload="loadP2()">
+        <header>
+            <h1>Obrigado por colaborar com a pesquisa.</h1><h2>As perguntas podem mudar de acordo com respostas anteriores.</h2>
+        </header>
+        <form>
+            <p>Você já jogou World of Warcraft?</p>
+            <input type="radio" name="jogawow" value="sim" onclick="escolheuSim()"><label>Sim</label>
+            <input type="radio" name="jogawow" value="nao" onclick="escolheuNao()"><label>Não</label><br>
+            <hr>
+            <div id="yes" style="display: none;">
+                <p>Qual sua "expansão" favorita?</p>
+                <div class="rad">
+                    <input type="radio" name="expansao" value="Classic"><label>Classic</label><br>
+                    <input type="radio" name="expansao" value="The Burning Cruzade"><label>The Burning Cruzade</label><br>
+                    <input type="radio" name="expansao" value="Wrath of the Lich King"><label>Wrath of the Lich King</label><br>
+                    <input type="radio" name="expansao" value="Cataclysm"><label>Cataclysm</label><br>
+                    <input type="radio" name="expansao" value="Mists of Pandaria"><label>Mists of Pandaria</label><br>
+                    <input type="radio" name="expansao" value="Warlords of Draenor"><label>Warlords of Draenor</label><br>
+                    <input type="radio" name="expansao" value="Legion"><label>Legion</label><br>
+                    <input type="radio" name="expansao" value="Battle for Azeroth"><label>Battle for Azeroth</label><br>
+                    <input type="radio" name="expansao" value="Shadowlands"><label>Shadowlands</label><br>
+                </div>
+                <br>
+                <hr>
+            </div>
+            <div id="no" style="display: none;">
+                <p>Por que não?</p>
+                <textarea name="justifica" id="justifica"></textarea><br>
+                <br>
+                <hr>
+            </div>
+            <a href="index.html"><input type="button" onclick="salvarP2()" value = "Anterior"></a>
+            <a href="pesquisa3.html"><input type="button" onclick="salvarP2()" value = "Próximo"></a>
+        </form>
+        <script src="js/script.js"></script>
+    </body>
+</html>
